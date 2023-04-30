@@ -1,0 +1,264 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 30, 2020, 9:21:39 AM
+    Author     : prathick
+*/
+
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+.cont
+{
+    position: relative;
+    width:100%;
+    background-color: #2b165e;
+    height:130px;
+    text-align: center;
+    top:-20px;
+}
+h1{
+    position:relative;
+    top:30px;
+    color: #ffffff;
+    
+}
+
+img {
+  display: block;
+  width: 80px;
+  margin: 30px auto;
+  box-shadow: 0 5px 10px -7px #333333;
+  border-radius: 50%;
+}
+
+.form {
+  background-color: #ffffff;
+  width: 500px;
+  margin: 50px auto 10px auto;
+  padding: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px -3px #333;
+  text-align: center;
+}
+.seperate{
+    margin-top: 130px;
+}
+.txt {
+  border-radius: 100px;
+  padding: 10px 15px;
+  width: 50%;
+  border: 1px solid #D9D9D9;
+  outline: none;
+  display: block;
+  margin: 20px auto 20px auto;
+}
+
+button {
+  border-radius: 100px;
+  border: none;
+  background: #719BE6;
+  width: 50%;
+  padding: 10px;
+  color: #FFFFFF;
+  margin-top: 25px;
+  box-shadow: 0 2px 10px -3px #719BE6;
+  display: block;
+  margin: 55px auto 10px auto;
+}
+
+a {
+  text-align: center;
+  margin-top: 30px;
+  color: #719BE6;
+  text-decoration: none;
+  padding: 5px;
+  display: inline-block;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#searchbox
+			{
+				background: #eaf8fc;
+				background-image: -moz-linear-gradient(#fff, #d4e8ec);
+				background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #d4e8ec),color-stop(1, #fff));
+				
+				-moz-border-radius: 35px;
+				border-radius: 35px;
+				
+				border-width: 1px;
+				border-style: solid;
+				border-color: #c4d9df #a4c3ca #83afb7;            
+				width: 505px;
+				height: 75px;
+				padding: 10px;
+				margin: 100px auto 50px;
+				overflow: hidden;
+			}
+        
+        #search, #submit
+        {
+            float: left;
+        }
+        
+        #search
+        {
+            padding: 5px 9px;
+            height: 55px;
+            width: 380px;
+            border: 1px solid #a4c3ca;
+            font: normal 13px 'trebuchet MS', arial, helvetica;
+            background: #f1f1f1;
+            
+            -moz-border-radius: 50px 3px 3px 50px;
+             border-radius: 50px 3px 3px 50px;
+             -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
+             -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);
+             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);            
+        }
+		
+		/* ----------------------- */
+		
+		#submit
+		{		
+            background: #6cbb6b;
+            background-image: -moz-linear-gradient(#95d788, #6cbb6b);
+            background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #6cbb6b),color-stop(1, #95d788));
+            
+            -moz-border-radius: 3px 50px 50px 3px;
+            border-radius: 3px 50px 50px 3px;
+            
+            border-width: 1px;
+            border-style: solid;
+            border-color: #7eba7c #578e57 #447d43;
+            
+             -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+             -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+             box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;   		
+
+			height: 50px;
+			margin: 0 0 0 10px;
+			padding: 0;
+			width: 90px;
+			cursor: pointer;
+			font: bold 14px Arial, Helvetica;
+			color: #23441e;
+			
+			text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+		}
+		
+		#submit:hover
+		{		
+            background: #95d788;
+            background-image: -moz-linear-gradient(#6cbb6b, #95d788);
+            background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, #95d788),color-stop(1, #6cbb6b));
+		}	
+
+		#submit:active
+		{		
+            background: #95d788;
+			outline: none;
+           
+             -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+             -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+             box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;		
+		}
+
+		#submit::-moz-focus-inner
+		{
+		  border: none;
+		}		
+		
+		/* ----------------------- */
+        
+        #search::-webkit-input-placeholder {
+           color: #9c9c9c;
+           font-style: italic;
+        }
+        
+        #search:-moz-placeholder {
+           color: #9c9c9c;
+           font-style: italic;
+        }    
+        
+        #search.placeholder {
+           color: #9c9c9c !important;
+           font-style: italic;
+        }  
+        
+        #search:focus
+        {
+            border-color: #8badb4;
+            background: #fff;
+            outline: none;
+        }	
+
+.byline p{
+  text-align:center;
+  color:#7eba7c;
+  font: bold 18px Arial, Helvetica, Sans-serif;
+  text-shadow: 0 2px 3px rgba(0,0,0,0.1);
+}
+
+.byline p a{
+  color:#000;
+  text-decoration:none;
+}
